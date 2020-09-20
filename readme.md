@@ -2,24 +2,17 @@
 
 Tool to parse and minify JSON.
 
+![Example](example.png)
+
 ## Building and running
 
 Make sure you have [stack](https://haskellstack.org/) installed and run the
 following:
 
 ```sh
-json-minifier $ stack build
-Building all executables...
+$ stack build
 
-json-minifier $ cat file.json
-{
-  "foo": true,
-  "bar": 123,
-  "baz": "abc",
-  "quux": [1, "a", false]
-}
-
-json-minifier $ cat file.json | stack exec minify
+$ cat file.json | stack exec minify
 {"foo":true,"bar":123,"baz":"abc","quux":[1,"a",false]}
 ```
 
